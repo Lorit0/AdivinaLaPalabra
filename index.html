@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juego de Adivina La Palabra</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1>Juego de Adivina La Palabra</h1>
+            <div id="palabra-contenedor"></div>
+            <p id="mensaje"></p>
+            <div class="input-contenedor">
+                <input
+                    type="text"
+                    id="letra-ingresada"
+                    maxlength="1"
+                    placeholder="Ingresa una letra"
+                />
+                <button id="verificar">Probar letra</button>
+            </div>
+            <div id="errores"></div>
+            <p>Errores: <span id="error">0</span>/12</p>
+            <button id="reiniciar" class="oculto">Reiniciar Juego</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
